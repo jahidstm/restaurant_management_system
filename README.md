@@ -1,6 +1,6 @@
 # restaurant_management_system
 
-This is our Capstone Project based on Restaurant Management System.
+This is our Capstone Project based on 'Restaurant Management System'. Our course instructor is honorable Md. Abdul Hye Zebon sir.
 
 Our teammates are:
 1. Jahid Hasan- 0242310005341038
