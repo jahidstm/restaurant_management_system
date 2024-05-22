@@ -425,7 +425,7 @@ int main()
         switch (choice)
         {
         case 1:
-            loginMenu();
+            //loginMenu();
             displayMenu(menu, numItems);
             placeOrder(menu, numItems);
             break;
