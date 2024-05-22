@@ -10,113 +10,6 @@ struct MenuItem
     float price;
 };
 
-// Function to add a new menu item
-void addMenuItem(struct MenuItem menu[], int numItems)
-{
-    printf("\n\t\t\tEnter food id: ");
-    scanf("%d", &menu[numItems].id);
-
-    printf("\n\t\t\tEnter food name: ");
-    getchar();
-    gets(menu[numItems].name);
-
-    printf("\n\t\t\tEnter food price: ");
-    scanf("%f", &menu[numItems].price);
-
-    printf("\n\t\t\tMenu item added successfully!!\n");
-    printf("\n\t\t\tEnter (0) to go to the main Menu: ");
-
-    int choice;
-    scanf(" %c", &choice);
-
-    if (choice == '0')
-    {
-        return;
-    }
-}
-
-// Function to delete a menu item
-void deleteMenuItem(struct MenuItem menu[], int numItems)
-{
-    int idToDelete;
-    printf("\n\t\t\tEnter food id to delete: ");
-    scanf("%d", &idToDelete);
-
-    int found = 0;
-
-    for (int i = 0; i < numItems; i++)
-    {
-        if (menu[i].id == idToDelete)
-        {
-            for (int j = i; j < numItems - 1; j++)
-            {
-                menu[j] = menu[j + 1];
-            }
-            found = 1;
-            break;
-        }
-    }
-    if (found)
-    {
-        printf("\n\t\t\tMenu item deleted successfully!!\n");
-        return numItems - 1;
-    }
-    else
-    {
-        printf("\n\t\t\tMenu item not found.\n");
-        return numItems;
-    }
-    printf("\n\t\t\tEnter (0) to go to the main Menu: ");
-
-    int choice;
-    scanf(" %c", &choice);
-
-    if (choice == '0')
-    {
-        return;
-    }
-}
-
-// Function to update a menu item
-void updateMenuItem(struct MenuItem menu[], int numItems)
-{
-    int idToUpdate;
-    printf("\n\t\t\tEnter food id to update: ");
-    scanf("%d", &idToUpdate);
-
-    int found = 0;
-
-    for (int i = 0; i < numItems; i++)
-    {
-        if (menu[i].id == idToUpdate)
-        {
-            printf("\n\t\t\tEnter new food name: ");
-            scanf("%s", menu[i].name);
-            printf("\n\t\t\tEnter new food price: ");
-            scanf("%f", &menu[i].price);
-            found = 1;
-            break;
-        }
-    }
-    if (found)
-    {
-        printf("\n\t\t\tMenu item updated successfully!\n");
-    }
-    else
-    {
-        printf("\n\t\t\tMenu item not found.\n");
-    }
-    printf("\n\t\t\tEnter (0) to go to the main Menu: ");
-
-    int choice;
-    scanf(" %c", &choice);
-
-    if (choice == '0')
-    {
-        return;
-    }
-}
-
 // Function to display the menu
 void displayMenu(struct MenuItem menu[], int numItems)
 {
@@ -258,6 +151,114 @@ void billpay(float totalBill)
             break;
     }
 
+    printf("\n\t\t\tEnter (0) to go to the main Menu: ");
+
+    int choice;
+    scanf(" %c", &choice);
+
+    if (choice == '0')
+    {
+        return;
+    }
+}
+
+
+// Function to add a new menu item
+void addMenuItem(struct MenuItem menu[], int numItems)
+{
+    printf("\n\t\t\tEnter food id: ");
+    scanf("%d", &menu[numItems].id);
+
+    printf("\n\t\t\tEnter food name: ");
+    getchar();
+    gets(menu[numItems].name);
+
+    printf("\n\t\t\tEnter food price: ");
+    scanf("%f", &menu[numItems].price);
+
+    printf("\n\t\t\tMenu item added successfully!!\n");
+    printf("\n\t\t\tEnter (0) to go to the main Menu: ");
+
+    int choice;
+    scanf(" %c", &choice);
+
+    if (choice == '0')
+    {
+        return;
+    }
+}
+
+// Function to delete a menu item
+void deleteMenuItem(struct MenuItem menu[], int numItems)
+{
+    int idToDelete;
+    printf("\n\t\t\tEnter food id to delete: ");
+    scanf("%d", &idToDelete);
+
+    int found = 0;
+
+    for (int i = 0; i < numItems; i++)
+    {
+        if (menu[i].id == idToDelete)
+        {
+            for (int j = i; j < numItems - 1; j++)
+            {
+                menu[j] = menu[j + 1];
+            }
+            found = 1;
+            break;
+        }
+    }
+    if (found)
+    {
+        printf("\n\t\t\tMenu item deleted successfully!!\n");
+        return numItems - 1;
+    }
+    else
+    {
+        printf("\n\t\t\tMenu item not found.\n");
+        return numItems;
+    }
+    printf("\n\t\t\tEnter (0) to go to the main Menu: ");
+
+    int choice;
+    scanf(" %c", &choice);
+
+    if (choice == '0')
+    {
+        return;
+    }
+}
+
+// Function to update a menu item
+void updateMenuItem(struct MenuItem menu[], int numItems)
+{
+    int idToUpdate;
+    printf("\n\t\t\tEnter food id to update: ");
+    scanf("%d", &idToUpdate);
+
+    int found = 0;
+
+    for (int i = 0; i < numItems; i++)
+    {
+        if (menu[i].id == idToUpdate)
+        {
+            printf("\n\t\t\tEnter new food name: ");
+            scanf("%s", menu[i].name);
+            printf("\n\t\t\tEnter new food price: ");
+            scanf("%f", &menu[i].price);
+            found = 1;
+            break;
+        }
+    }
+    if (found)
+    {
+        printf("\n\t\t\tMenu item updated successfully!\n");
+    }
+    else
+    {
+        printf("\n\t\t\tMenu item not found.\n");
+    }
     printf("\n\t\t\tEnter (0) to go to the main Menu: ");
 
     int choice;
