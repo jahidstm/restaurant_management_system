@@ -1,8 +1,59 @@
-# restaurant_management_system
+# 🍽️ Restaurant Management System  
+**C Programming Capstone Project**  
+*A terminal-based solution for restaurant operations management*  
 
-This is our Capstone Project based on 'Restaurant Management System'. Our course instructor is honorable Md. Abdul Hye Zebon sir.
+![C](https://img.shields.io/badge/Language-C-blue)
+![Status](https://img.shields.io/badge/Status-Complete-success)
+![Team](https://img.shields.io/badge/Team-3_Members-orange)
 
-Our teammates are:
-1. Jahid Hasan- 0242310005341038
-2. Nohzat Tabassum- 0242310005341109
-3. Moumita Rahman Meem- 0242310005341137
+---
+
+## 📌 Table of Contents  
+- [Project Overview](#-project-overview)  
+- [Key Features](#-key-features)  
+- [System Structure](#-system-structure)  
+- [Installation](#-installation)  
+- [Usage](#-usage)  
+- [Team](#-team)  
+- [License](#-license)  
+
+---
+
+## 🚀 Project Overview  
+This **C-based** system demonstrates:  
+✔ File handling for data persistence  
+✔ Linked lists for dynamic memory management  
+✔ Modular programming with headers  
+✔ Menu-driven console interface  
+
+Built for:  
+- Order management  
+- Inventory tracking  
+- Billing and receipts  
+
+---
+
+## ✨ Key Features  
+- **Order System**:  
+  - Add/Modify/Cancel orders  
+  - Calculate total bills  
+- **Inventory Control**:  
+  - Stock level monitoring  
+  - Low-stock alerts  
+- **Reporting**:  
+  - Daily sales summaries  
+  - Popular item analytics  
+
+---
+
+## 🏗 System Structure  
+```plaintext
+src/
+├── main.c            # Entry point
+├── order.c           # Order processing
+├── inventory.c       # Stock management
+├── billing.c         # Payment calculations
+├── reports.c         # Analytics
+└── data/
+    ├── orders.dat    # Order records
+    └── menu.dat      # Item database
