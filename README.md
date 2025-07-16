@@ -8,17 +8,6 @@
 
 ---
 
-## 📌 Table of Contents  
-- [Project Overview](#-project-overview)  
-- [Key Features](#-key-features)  
-- [System Structure](#-system-structure)  
-- [Installation](#-installation)  
-- [Usage](#-usage)  
-- [Team](#-team)  
-- [License](#-license)  
-
----
-
 ## 🚀 Project Overview  
 This **C-based** system demonstrates:  
 ✔ File handling for data persistence  
